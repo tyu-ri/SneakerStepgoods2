@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>すにすてグッズ計算機👟</title>
+<style>
+body { font-family: sans-serif; padding: 20px; }
+.item { margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; border-radius: 10px; }
+button { padding: 5px 10px; margin: 0 5px; }
+.total { font-size: 20px; font-weight: bold; margin-top: 20px; }
+</style>
+</head>
+
+<body>
+
+<h2>👟グッズ計算機(We are SneakerStep! -2nd Step- ver.) 👟</h2>
+
+<div class="item">
+<p>ランダム缶バッジ（500円）</p>
+<button onclick="changeQty('a', -1)">-</button>
+<span id="a">0</span>
+<button onclick="changeQty('a', 1)">+</button>
+</div>
+
+<div class="item">
+<p>ランダムホログラムカード（500円）</p>
+<button onclick="changeQty('b', -1)">-</button>
+<span id="b">0</span>
+<button onclick="changeQty('b', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ランダムバックステージパス風ステッカー
+（600円）</p>
+<button onclick="changeQty('c', -1)">-</button>
+<span id="c">0</span>
+<button onclick="changeQty('c', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ランダムロッカーキーホルダー（800円）</p>
+<button onclick="changeQty('d', -1)">-</button>
+<span id="d">0</span>
+<button onclick="changeQty('d', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ランダムリングライト（1000円）</p>
+<button onclick="changeQty('e', -1)">-</button>
+<span id="e">0</span>
+<button onclick="changeQty('e', 1)">+</button>
+</div>
+
+<div class="item">
+<p> クリアファイル(Type A)（600円）</p>
+<button onclick="changeQty('f', -1)">-</button>
+<span id="f">0</span>
+<button onclick="changeQty('f', 1)">+</button>
+</div>
+
+<div class="item">
+<p> クリアファイル(Type B)（600円）</p>
+<button onclick="changeQty('g', -1)">-</button>
+<span id="g">0</span>
+<button onclick="changeQty('g', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルキーホルダー(にしき)（1000円）</p>
+<button onclick="changeQty('h', -1)">-</button>
+<span id="h">0</span>
+<button onclick="changeQty('h', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルキーホルダー(らお)（1000円）</p>
+<button onclick="changeQty('i', -1)">-</button>
+<span id="i">0</span>
+<button onclick="changeQty('i', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルキーホルダー(だいきり)（1000円）</p>
+<button onclick="changeQty('j', -1)">-</button>
+<span id="j">0</span>
+<button onclick="changeQty('j', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルキーホルダー(たちばな)（1000円）</p>
+<button onclick="changeQty('k', -1)">-</button>
+<span id="k">0</span>
+<button onclick="changeQty('k', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルキーホルダー(ゆたくん)（1000円）</p>
+<button onclick="changeQty('l', -1)">-</button>
+<span id="l">0</span>
+<button onclick="changeQty('l', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルキーホルダー(やなと)（1000円）</p>
+<button onclick="changeQty('m', -1)">-</button>
+<span id="m">0</span>
+<button onclick="changeQty('m', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルキーホルダー(おさでい)（1000円）</p>
+<button onclick="changeQty('n', -1)">-</button>
+<span id="n">0</span>
+<button onclick="changeQty('n', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルスタンド(にしき)（1800円）</p>
+<button onclick="changeQty('o', -1)">-</button>
+<span id="o">0</span>
+<button onclick="changeQty('o', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルスタンド(らお)（1800円）</p>
+<button onclick="changeQty('p', -1)">-</button>
+<span id="p">0</span>
+<button onclick="changeQty('p', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルスタンド(だいきり)（1800円）</p>
+<button onclick="changeQty('q', -1)">-</button>
+<span id="q">0</span>
+<button onclick="changeQty('q', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルスタンド(たちばな)（1800円）</p>
+<button onclick="changeQty('r', -1)">-</button>
+<span id="r">0</span>
+<button onclick="changeQty('r', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルスタンド(ゆたくん)（1800円）</p>
+<button onclick="changeQty('s', -1)">-</button>
+<span id="s">0</span>
+<button onclick="changeQty('s', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルスタンド(やなと)（1800円）</p>
+<button onclick="changeQty('t', -1)">-</button>
+<span id="t">0</span>
+<button onclick="changeQty('t', 1)">+</button>
+</div>
+
+<div class="item">
+<p> アクリルスタンド(おさでい)（1800円）</p>
+<button onclick="changeQty('u', -1)">-</button>
+<span id="u">0</span>
+<button onclick="changeQty('u', 1)">+</button>
+</div>
+
+<div class="item">
+<p> チケット風キーホルダー(にしき)（1200円）</p>
+<button onclick="changeQty('v', -1)">-</button>
+<span id="v">0</span>
+<button onclick="changeQty('v', 1)">+</button>
+</div>
+
+<div class="item">
+<p> チケット風キーホルダー(らお)（1200円）</p>
+<button onclick="changeQty('w', -1)">-</button>
+<span id="w">0</span>
+<button onclick="changeQty('w', 1)">+</button>
+</div>
+
+<div class="item">
+<p> チケット風キーホルダー(だいきり)（1200円）</p>
+<button onclick="changeQty('x', -1)">-</button>
+<span id="x">0</span>
+<button onclick="changeQty('x', 1)">+</button>
+</div>
+
+<div class="item">
+<p> チケット風キーホルダー(たちばな)（1200円）</p>
+<button onclick="changeQty('y', -1)">-</button>
+<span id="y">0</span>
+<button onclick="changeQty('y', 1)">+</button>
+</div>
+
+<div class="item">
+<p> チケット風キーホルダー(ゆたくん)（1200円）</p>
+<button onclick="changeQty('z', -1)">-</button>
+<span id="z">0</span>
+<button onclick="changeQty('z', 1)">+</button>
+</div>
+
+<div class="item">
+<p> チケット風キーホルダー(やなと)（1200円）</p>
+<button onclick="changeQty('aa', -1)">-</button>
+<span id="aa">0</span>
+<button onclick="changeQty('aa', 1)">+</button>
+</div>
+
+<div class="item">
+<p> チケット風キーホルダー(おさでい)（1200円）</p>
+<button onclick="changeQty('ab', -1)">-</button>
+<span id="ab">0</span>
+<button onclick="changeQty('ab', 1)">+</button>
+</div>
+
+<div class="item">
+<p> カードキーホルダー(にしき)（1500円）</p>
+<button onclick="changeQty('ac', -1)">-</button>
+<span id="ac">0</span>
+<button onclick="changeQty('ac', 1)">+</button>
+</div>
+
+<div class="item">
+<p> カードキーホルダー(らお)（1500円）</p>
+<button onclick="changeQty('ad', -1)">-</button>
+<span id="ad">0</span>
+<button onclick="changeQty('ad', 1)">+</button>
+</div>
+
+<div class="item">
+<p> カードキーホルダー(だいきり)（1500円）</p>
+<button onclick="changeQty('ae', -1)">-</button>
+<span id="ae">0</span>
+<button onclick="changeQty('ae', 1)">+</button>
+</div>
+
+<div class="item">
+<p> カードキーホルダー(たちばな)（1500円）</p>
+<button onclick="changeQty('af', -1)">-</button>
+<span id="af">0</span>
+<button onclick="changeQty('af', 1)">+</button>
+</div>
+
+<div class="item">
+<p> カードキーホルダー(ゆたくん)（1500円）</p>
+<button onclick="changeQty('ag', -1)">-</button>
+<span id="ag">0</span>
+<button onclick="changeQty('ag', 1)">+</button>
+</div>
+
+<div class="item">
+<p> カードキーホルダー(やなと)（1500円）</p>
+<button onclick="changeQty('ah', -1)">-</button>
+<span id="ah">0</span>
+<button onclick="changeQty('ah', 1)">+</button>
+</div>
+
+<div class="item">
+<p> カードキーホルダー(おさでい)（1500円）</p>
+<button onclick="changeQty('ai', -1)">-</button>
+<span id="ai">0</span>
+<button onclick="changeQty('ai', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ジャンボうちわ(にしき)（1200円）</p>
+<button onclick="changeQty('aj', -1)">-</button>
+<span id="aj">0</span>
+<button onclick="changeQty('aj', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ジャンボうちわ(らお)（1200円）</p>
+<button onclick="changeQty('ak', -1)">-</button>
+<span id="ak">0</span>
+<button onclick="changeQty('ak', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ジャンボうちわ(だいきり)（1200円）</p>
+<button onclick="changeQty('al', -1)">-</button>
+<span id="al">0</span>
+<button onclick="changeQty('al', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ジャンボうちわ(たちばな)（1200円）</p>
+<button onclick="changeQty('am', -1)">-</button>
+<span id="am">0</span>
+<button onclick="changeQty('am', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ジャンボうちわ(ゆたくん)（1200円）</p>
+<button onclick="changeQty('an', -1)">-</button>
+<span id="an">0</span>
+<button onclick="changeQty('an', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ジャンボうちわ(やなと)（1200円）</p>
+<button onclick="changeQty('ao', -1)">-</button>
+<span id="ao">0</span>
+<button onclick="changeQty('ao', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ジャンボうちわ(おさでい)（1200円）</p>
+<button onclick="changeQty('ap', -1)">-</button>
+<span id="ap">0</span>
+<button onclick="changeQty('ap', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ペンライト（3500円）</p>
+<button onclick="changeQty('aq', -1)">-</button>
+<span id="aq">0</span>
+<button onclick="changeQty('aq', 1)">+</button>
+</div>
+
+<div class="item">
+<p> ラメ入りマフラータオル（2500円）</p>
+<button onclick="changeQty('ar', -1)">-</button>
+<span id="ar">0</span>
+<button onclick="changeQty('ar', 1)">+</button>
+</div>
+
+<div class="item">
+<p> グラフィックTシャツ（4500円）</p>
+<button onclick="changeQty('as', -1)">-</button>
+<span id="as">0</span>
+<button onclick="changeQty('as', 1)">+</button>
+</div>
+
+<div class="total">
+👟 グッズ金額合計：<span id="total">0</span>円
+</div>
+
+<script>
+const prices = { a: 500, b: 500, c: 600, d: 800, e: 1000, f: 600, g: 600, h: 1000, i: 1000, j: 1000, k: 1000, l: 1000, m: 1000, n: 1000, o: 1800, p: 1800, q: 1800, r: 1800, s: 1800, t: 1800, u: 1800, v: 1200, w: 1200, x: 1200, y: 1200, z: 1200, aa: 1200, ab: 1200, ac: 1500, ad: 1500, ae: 1500, af: 1500, ag: 1500, ah: 1500, ai: 1500, aj: 1200, ak: 1200, al: 1200, am: 1200, an: 1200, ao: 1200, ap: 1200, aq: 3500, ar: 2500, as: 4500};
+const qty = { a: 0, b: 0, c: 0, d: 0, e: 0, f: 0, g: 0, h: 0, i: 0, j: 0, k: 0, l: 0, m: 0, n: 0, o: 0, p: 0, q: 0, r: 0, s: 0, t: 0, u: 0, v: 0, w: 0, x: 0, y: 0, z: 0, aa: 0, ab: 0, ac: 0, ad: 0, ae: 0, af: 0, ag: 0, ah: 0, ai: 0, aj: 0, ak: 0, al: 0, am: 0, an: 0, ao: 0, ap: 0, aq: 0, ar: 0, as: 0};
+
+function changeQty(id, num){
+  qty[id] += num;
+  if(qty[id] < 0) qty[id] = 0;
+  document.getElementById(id).innerText = qty[id];
+  calc();
+}
+
+function calc(){
+  let total = 0;
+  for(let id in qty){
+    total += qty[id] * prices[id];
+  }
+  document.getElementById("total").innerText = total;
+}
+</script>
+
+</body>
+</html>
